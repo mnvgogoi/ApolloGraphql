@@ -1,0 +1,104 @@
+query GetAllFeeds($reqdTypes: [String!]!, $offset: Int!, $limit: Int!) {
+  feedsV2(reqdTypes: $reqdTypes, offset: $offset, limit: $limit) {
+	feedId
+	feedType
+	createdAt
+	image
+	name
+	description
+	sender {
+	  ...NameAndID
+	}
+	receivers{
+		...NameAndID
+	}
+	comments{
+		count
+	}
+	likes {
+	  count
+	  users {
+		name
+	  }
+	  isLiked
+	}
+  }}
+
+  fragment NameAndID on User{
+	  name
+	  id
+  }
+
+# query to get liked user...........
+
+query GetLikedUsersForParticularFeed($reqdTypes: [String!]!, $offset: Int!, $limit: Int!,$feedId: Int!) {
+  feedsV2(reqdTypes: $reqdTypes, offset: $offset, limit: $limit, feedId: $feedId) {
+	feedId
+	feedType
+	likes {
+		count
+		users {
+		name
+		}
+		isLiked
+	}
+  }}
+
+
+#get comments...............
+query GetComments($reqdTypes: [String!]!, $offset: Int!, $limit: Int!, $feedId: Int!) {
+  feedsV2(reqdTypes: $reqdTypes, offset: $offset, limit: $limit, feedId: $feedId) {
+	feedId
+	feedType
+	comments{
+		count
+		info{
+			edges{
+				node{
+					commentId
+					createdAt
+					text
+					user {
+						name
+						profilePic
+					}
+					likes {
+						count
+						users {
+							name
+						}
+						isLiked
+					}
+					replies {
+						count
+						info {
+							commentId
+							text
+							image
+							createdAt
+							isEdited
+								user {
+								name
+							}
+							likes {
+							   count
+							   users {
+								   name
+							   }
+							   isLiked
+						   }
+						}
+					}
+				}
+			}
+		}
+	}
+  }}
+
+# add comment.............
+mutation addComment($feedId:Int!, $commentText:String!, $isReply:Boolean!){
+	comment(feedId: $feedId,commentText:$commentText,isReply:$isReply){
+		commentId
+		createdAt
+	}
+}

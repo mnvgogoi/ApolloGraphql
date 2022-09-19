@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		524CD88B28D1D3C70065A321 /* LikesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CD88928D1D3C70065A321 /* LikesTableCell.swift */; };
+		524CD88C28D1D3C70065A321 /* LikesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524CD88A28D1D3C70065A321 /* LikesTableCell.xib */; };
+		526516E228D45CF10022059D /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526516E028D45CF10022059D /* CommentsCell.swift */; };
+		526516E328D45CF10022059D /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526516E128D45CF10022059D /* CommentsCell.xib */; };
+		526516E628D45D050022059D /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526516E428D45D050022059D /* CommentsViewController.swift */; };
+		526516E728D45D050022059D /* CommentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526516E528D45D050022059D /* CommentsViewController.xib */; };
+		526516EA28D4897A0022059D /* ReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526516E828D4897A0022059D /* ReplyCell.swift */; };
+		526516EB28D4897A0022059D /* ReplyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526516E928D4897A0022059D /* ReplyCell.xib */; };
+		52A0812E28D1A22B00785B9C /* LikesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0812C28D1A22B00785B9C /* LikesScreenViewController.swift */; };
+		52A0812F28D1A22B00785B9C /* LikesScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A0812D28D1A22B00785B9C /* LikesScreenViewController.xib */; };
+		52C73F5D28CF27FD005677E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C73F5C28CF27FD005677E2 /* AppDelegate.swift */; };
+		52C73F5F28CF27FD005677E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C73F5E28CF27FD005677E2 /* SceneDelegate.swift */; };
+		52C73F6128CF27FD005677E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C73F6028CF27FD005677E2 /* ViewController.swift */; };
+		52C73F6428CF27FD005677E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C73F6228CF27FD005677E2 /* Main.storyboard */; };
+		52C73F6628CF27FF005677E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C73F6528CF27FF005677E2 /* Assets.xcassets */; };
+		52C73F6928CF27FF005677E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C73F6728CF27FF005677E2 /* LaunchScreen.storyboard */; };
+		52C73F7228CF282B005677E2 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 52C73F7128CF282B005677E2 /* Apollo */; };
+		52C73F7428CF282B005677E2 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 52C73F7328CF282B005677E2 /* ApolloWebSocket */; };
+		52C73F7828CF28A0005677E2 /* Query.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 52C73F7728CF28A0005677E2 /* Query.graphql */; };
+		52C73F7B28CF29E9005677E2 /* feedSchemaNew.json in Resources */ = {isa = PBXBuildFile; fileRef = 52C73F7A28CF29E9005677E2 /* feedSchemaNew.json */; };
+		52C73F7D28CF3B9A005677E2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C73F7C28CF3B9A005677E2 /* API.swift */; };
+		52C73F7F28CF3BD9005677E2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C73F7E28CF3BD9005677E2 /* Network.swift */; };
+		52EEFF9428D0457700DBBE63 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EEFF9228D0457700DBBE63 /* FeedsViewController.swift */; };
+		52EEFF9528D0457700DBBE63 /* FeedsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EEFF9328D0457700DBBE63 /* FeedsViewController.xib */; };
+		52EEFF9828D045FB00DBBE63 /* FeedsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EEFF9628D045FB00DBBE63 /* FeedsTableCell.swift */; };
+		52EEFF9928D045FB00DBBE63 /* FeedsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EEFF9728D045FB00DBBE63 /* FeedsTableCell.xib */; };
+		86BC1AD921CF5D1C83BEC426 /* Pods_VCgraphqlDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9917DD7CBCF4D3116149E9AA /* Pods_VCgraphqlDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B1ADBC2B48C642673FD807A /* Pods-VCgraphqlDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCgraphqlDemo.release.xcconfig"; path = "Target Support Files/Pods-VCgraphqlDemo/Pods-VCgraphqlDemo.release.xcconfig"; sourceTree = "<group>"; };
+		524CD88928D1D3C70065A321 /* LikesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesTableCell.swift; sourceTree = "<group>"; };
+		524CD88A28D1D3C70065A321 /* LikesTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikesTableCell.xib; sourceTree = "<group>"; };
+		526516E028D45CF10022059D /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
+		526516E128D45CF10022059D /* CommentsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
+		526516E428D45D050022059D /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		526516E528D45D050022059D /* CommentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsViewController.xib; sourceTree = "<group>"; };
+		526516E828D4897A0022059D /* ReplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCell.swift; sourceTree = "<group>"; };
+		526516E928D4897A0022059D /* ReplyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReplyCell.xib; sourceTree = "<group>"; };
+		52A0812C28D1A22B00785B9C /* LikesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesScreenViewController.swift; sourceTree = "<group>"; };
+		52A0812D28D1A22B00785B9C /* LikesScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikesScreenViewController.xib; sourceTree = "<group>"; };
+		52C73F5928CF27FD005677E2 /* VCgraphqlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCgraphqlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C73F5C28CF27FD005677E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52C73F5E28CF27FD005677E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52C73F6028CF27FD005677E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52C73F6328CF27FD005677E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52C73F6528CF27FF005677E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52C73F6828CF27FF005677E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52C73F6A28CF27FF005677E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C73F7728CF28A0005677E2 /* Query.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Query.graphql; sourceTree = "<group>"; };
+		52C73F7A28CF29E9005677E2 /* feedSchemaNew.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feedSchemaNew.json; sourceTree = "<group>"; };
+		52C73F7C28CF3B9A005677E2 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		52C73F7E28CF3BD9005677E2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		52EEFF9228D0457700DBBE63 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		52EEFF9328D0457700DBBE63 /* FeedsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsViewController.xib; sourceTree = "<group>"; };
+		52EEFF9628D045FB00DBBE63 /* FeedsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsTableCell.swift; sourceTree = "<group>"; };
+		52EEFF9728D045FB00DBBE63 /* FeedsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsTableCell.xib; sourceTree = "<group>"; };
+		75D5CEF9111105B3804ABE3C /* Pods-VCgraphqlDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VCgraphqlDemo.debug.xcconfig"; path = "Target Support Files/Pods-VCgraphqlDemo/Pods-VCgraphqlDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9917DD7CBCF4D3116149E9AA /* Pods_VCgraphqlDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VCgraphqlDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52C73F5628CF27FD005677E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C73F7228CF282B005677E2 /* Apollo in Frameworks */,
+				52C73F7428CF282B005677E2 /* ApolloWebSocket in Frameworks */,
+				86BC1AD921CF5D1C83BEC426 /* Pods_VCgraphqlDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		526516DF28D45CCC0022059D /* Comments Screen */ = {
+			isa = PBXGroup;
+			children = (
+				526516E028D45CF10022059D /* CommentsCell.swift */,
+				526516E128D45CF10022059D /* CommentsCell.xib */,
+				526516E428D45D050022059D /* CommentsViewController.swift */,
+				526516E528D45D050022059D /* CommentsViewController.xib */,
+				529C8BFE28D82C9600C57719 /* Reply Cell */,
+			);
+			path = "Comments Screen";
+			sourceTree = "<group>";
+		};
+		529C8BFE28D82C9600C57719 /* Reply Cell */ = {
+			isa = PBXGroup;
+			children = (
+				526516E828D4897A0022059D /* ReplyCell.swift */,
+				526516E928D4897A0022059D /* ReplyCell.xib */,
+			);
+			path = "Reply Cell";
+			sourceTree = "<group>";
+		};
+		52A0813028D1A23900785B9C /* Likes Screen */ = {
+			isa = PBXGroup;
+			children = (
+				52A0812C28D1A22B00785B9C /* LikesScreenViewController.swift */,
+				52A0812D28D1A22B00785B9C /* LikesScreenViewController.xib */,
+				524CD88928D1D3C70065A321 /* LikesTableCell.swift */,
+				524CD88A28D1D3C70065A321 /* LikesTableCell.xib */,
+			);
+			path = "Likes Screen";
+			sourceTree = "<group>";
+		};
+		52C73F5028CF27FD005677E2 = {
+			isa = PBXGroup;
+			children = (
+				52C73F5B28CF27FD005677E2 /* VCgraphqlDemo */,
+				52C73F5A28CF27FD005677E2 /* Products */,
+				F219214A3CE37A6BDDDA44C8 /* Pods */,
+				53E7AA61EDA9A3B9E24A6280 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52C73F5A28CF27FD005677E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52C73F5928CF27FD005677E2 /* VCgraphqlDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52C73F5B28CF27FD005677E2 /* VCgraphqlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				526516DF28D45CCC0022059D /* Comments Screen */,
+				52EEFF9128D0455700DBBE63 /* Feeds Table VC */,
+				52A0813028D1A23900785B9C /* Likes Screen */,
+				52C73F5C28CF27FD005677E2 /* AppDelegate.swift */,
+				52C73F5E28CF27FD005677E2 /* SceneDelegate.swift */,
+				52C73F6028CF27FD005677E2 /* ViewController.swift */,
+				52C73F7C28CF3B9A005677E2 /* API.swift */,
+				52C73F7E28CF3BD9005677E2 /* Network.swift */,
+				52C73F7728CF28A0005677E2 /* Query.graphql */,
+				52C73F7A28CF29E9005677E2 /* feedSchemaNew.json */,
+				52C73F6228CF27FD005677E2 /* Main.storyboard */,
+				52C73F6528CF27FF005677E2 /* Assets.xcassets */,
+				52C73F6728CF27FF005677E2 /* LaunchScreen.storyboard */,
+				52C73F6A28CF27FF005677E2 /* Info.plist */,
+			);
+			path = VCgraphqlDemo;
+			sourceTree = "<group>";
+		};
+		52EEFF9128D0455700DBBE63 /* Feeds Table VC */ = {
+			isa = PBXGroup;
+			children = (
+				52EEFF9228D0457700DBBE63 /* FeedsViewController.swift */,
+				52EEFF9328D0457700DBBE63 /* FeedsViewController.xib */,
+				52EEFF9628D045FB00DBBE63 /* FeedsTableCell.swift */,
+				52EEFF9728D045FB00DBBE63 /* FeedsTableCell.xib */,
+			);
+			path = "Feeds Table VC";
+			sourceTree = "<group>";
+		};
+		53E7AA61EDA9A3B9E24A6280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9917DD7CBCF4D3116149E9AA /* Pods_VCgraphqlDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F219214A3CE37A6BDDDA44C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D5CEF9111105B3804ABE3C /* Pods-VCgraphqlDemo.debug.xcconfig */,
+				3B1ADBC2B48C642673FD807A /* Pods-VCgraphqlDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52C73F5828CF27FD005677E2 /* VCgraphqlDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C73F6D28CF27FF005677E2 /* Build configuration list for PBXNativeTarget "VCgraphqlDemo" */;
+			buildPhases = (
+				21621F3A4B3B83A8744E28E9 /* [CP] Check Pods Manifest.lock */,
+				52C73F7928CF28C7005677E2 /* Apollo */,
+				52C73F5528CF27FD005677E2 /* Sources */,
+				52C73F5628CF27FD005677E2 /* Frameworks */,
+				52C73F5728CF27FD005677E2 /* Resources */,
+				A3E97FA5E5FA4ADC935D2938 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VCgraphqlDemo;
+			packageProductDependencies = (
+				52C73F7128CF282B005677E2 /* Apollo */,
+				52C73F7328CF282B005677E2 /* ApolloWebSocket */,
+			);
+			productName = VCgraphqlDemo;
+			productReference = 52C73F5928CF27FD005677E2 /* VCgraphqlDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52C73F5128CF27FD005677E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					52C73F5828CF27FD005677E2 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 52C73F5428CF27FD005677E2 /* Build configuration list for PBXProject "VCgraphqlDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52C73F5028CF27FD005677E2;
+			packageReferences = (
+				52C73F7028CF282B005677E2 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 52C73F5A28CF27FD005677E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52C73F5828CF27FD005677E2 /* VCgraphqlDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52C73F5728CF27FD005677E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C73F6928CF27FF005677E2 /* LaunchScreen.storyboard in Resources */,
+				52C73F6628CF27FF005677E2 /* Assets.xcassets in Resources */,
+				526516EB28D4897A0022059D /* ReplyCell.xib in Resources */,
+				526516E728D45D050022059D /* CommentsViewController.xib in Resources */,
+				52EEFF9928D045FB00DBBE63 /* FeedsTableCell.xib in Resources */,
+				524CD88C28D1D3C70065A321 /* LikesTableCell.xib in Resources */,
+				52C73F7828CF28A0005677E2 /* Query.graphql in Resources */,
+				52C73F7B28CF29E9005677E2 /* feedSchemaNew.json in Resources */,
+				52A0812F28D1A22B00785B9C /* LikesScreenViewController.xib in Resources */,
+				52EEFF9528D0457700DBBE63 /* FeedsViewController.xib in Resources */,
+				52C73F6428CF27FD005677E2 /* Main.storyboard in Resources */,
+				526516E328D45CF10022059D /* CommentsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21621F3A4B3B83A8744E28E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VCgraphqlDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52C73F7928CF28C7005677E2 /* Apollo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Apollo;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"feedSchemaNew.json\" API.swift\n#\"${SCRIPT_PATH}\"/run-bundled-codegen.sh schema:download --endpoint=\"https://app.vantagecircle.in/api/feed/graphql\"\n";
+		};
+		A3E97FA5E5FA4ADC935D2938 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VCgraphqlDemo/Pods-VCgraphqlDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VCgraphqlDemo/Pods-VCgraphqlDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VCgraphqlDemo/Pods-VCgraphqlDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52C73F5528CF27FD005677E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52EEFF9428D0457700DBBE63 /* FeedsViewController.swift in Sources */,
+				526516E228D45CF10022059D /* CommentsCell.swift in Sources */,
+				526516EA28D4897A0022059D /* ReplyCell.swift in Sources */,
+				526516E628D45D050022059D /* CommentsViewController.swift in Sources */,
+				524CD88B28D1D3C70065A321 /* LikesTableCell.swift in Sources */,
+				52A0812E28D1A22B00785B9C /* LikesScreenViewController.swift in Sources */,
+				52EEFF9828D045FB00DBBE63 /* FeedsTableCell.swift in Sources */,
+				52C73F7F28CF3BD9005677E2 /* Network.swift in Sources */,
+				52C73F6128CF27FD005677E2 /* ViewController.swift in Sources */,
+				52C73F5D28CF27FD005677E2 /* AppDelegate.swift in Sources */,
+				52C73F7D28CF3B9A005677E2 /* API.swift in Sources */,
+				52C73F5F28CF27FD005677E2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		52C73F6228CF27FD005677E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C73F6328CF27FD005677E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52C73F6728CF27FF005677E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52C73F6828CF27FF005677E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52C73F6B28CF27FF005677E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52C73F6C28CF27FF005677E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52C73F6E28CF27FF005677E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D5CEF9111105B3804ABE3C /* Pods-VCgraphqlDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9H79YSD8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VCgraphqlDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnv.VCgraphqlDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52C73F6F28CF27FF005677E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1ADBC2B48C642673FD807A /* Pods-VCgraphqlDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q9H79YSD8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VCgraphqlDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnv.VCgraphqlDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52C73F5428CF27FD005677E2 /* Build configuration list for PBXProject "VCgraphqlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C73F6B28CF27FF005677E2 /* Debug */,
+				52C73F6C28CF27FF005677E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C73F6D28CF27FF005677E2 /* Build configuration list for PBXNativeTarget "VCgraphqlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C73F6E28CF27FF005677E2 /* Debug */,
+				52C73F6F28CF27FF005677E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52C73F7028CF282B005677E2 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52C73F7128CF282B005677E2 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52C73F7028CF282B005677E2 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		52C73F7328CF282B005677E2 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52C73F7028CF282B005677E2 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 52C73F5128CF27FD005677E2 /* Project object */;
+}

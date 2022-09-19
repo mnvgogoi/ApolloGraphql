@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="LikesTableCell" customModule="VCgraphqlDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="n74-jq-klV">
+                        <rect key="frame" x="5" y="5" width="272" height="74"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOA-P9-kZC">
+                                <rect key="frame" x="0.0" y="2" width="70" height="70"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="o3D-x5-eeN">
+                                        <rect key="frame" x="20" y="10.5" width="30" height="49"/>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="o3D-x5-eeN" secondAttribute="trailing" constant="20" id="66Q-Yq-jEe"/>
+                                    <constraint firstAttribute="width" constant="70" id="FWH-Iv-dQx"/>
+                                    <constraint firstItem="o3D-x5-eeN" firstAttribute="leading" secondItem="mOA-P9-kZC" secondAttribute="leading" constant="20" id="Gf8-nA-azN"/>
+                                    <constraint firstAttribute="height" constant="70" id="SW6-4D-GcZ"/>
+                                    <constraint firstItem="o3D-x5-eeN" firstAttribute="top" secondItem="mOA-P9-kZC" secondAttribute="top" constant="10" id="bT7-Yn-u7l"/>
+                                    <constraint firstItem="o3D-x5-eeN" firstAttribute="centerX" secondItem="mOA-P9-kZC" secondAttribute="centerX" id="hLB-5y-rn8"/>
+                                    <constraint firstAttribute="bottom" secondItem="o3D-x5-eeN" secondAttribute="bottom" constant="10" id="p31-jM-F30"/>
+                                    <constraint firstItem="o3D-x5-eeN" firstAttribute="centerY" secondItem="mOA-P9-kZC" secondAttribute="centerY" id="ta3-Mm-FJX"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EL4-N5-ily">
+                                <rect key="frame" x="80" y="27" width="192" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="n74-jq-klV" secondAttribute="bottom" constant="5" id="PQp-uF-yiY"/>
+                    <constraint firstItem="n74-jq-klV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="X6h-ph-xM0"/>
+                    <constraint firstItem="n74-jq-klV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="XMi-xt-ndu"/>
+                    <constraint firstAttribute="trailing" secondItem="n74-jq-klV" secondAttribute="trailing" constant="5" id="z3C-rs-sUp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="EL4-N5-ily" id="W3w-uE-Y9r"/>
+                <outlet property="profileImageBackground" destination="mOA-P9-kZC" id="PlY-pu-fZ1"/>
+                <outlet property="profilePicImageView" destination="o3D-x5-eeN" id="UmO-Dr-7dy"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="150"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="ReplyCell" customModule="VCgraphqlDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gGG-dj-jJw">
+                        <rect key="frame" x="20" y="5" width="330" height="107"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgt-Nh-can">
+                                <rect key="frame" x="0.0" y="0.0" width="49" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbt-gX-tht">
+                                <rect key="frame" x="0.0" y="39" width="72" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nez-ik-bi7">
+                                <rect key="frame" x="0.0" y="78" width="81.5" height="29"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gu-VC-VSe">
+                                        <rect key="frame" x="0.0" y="0.0" width="21" height="29"/>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="hand.thumbsup" catalog="system"/>
+                                        <state key="selected" image="hand.thumbsup.fill" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4G-t6-Csm">
+                                        <rect key="frame" x="31" y="0.0" width="50.5" height="29"/>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="hand.thumbsup" catalog="system"/>
+                                        <state key="selected" image="hand.thumbsup.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Like"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="Nez-ik-bi7" firstAttribute="leading" secondItem="gGG-dj-jJw" secondAttribute="leading" id="wec-Yj-Hhw"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="gGG-dj-jJw" secondAttribute="bottom" constant="5" id="KbV-f7-eNy"/>
+                    <constraint firstItem="gGG-dj-jJw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="M39-cN-DaW"/>
+                    <constraint firstItem="gGG-dj-jJw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Obh-RU-z0R"/>
+                    <constraint firstAttribute="trailing" secondItem="gGG-dj-jJw" secondAttribute="trailing" constant="10" id="uJn-kV-OR3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="likeBtn" destination="3gu-VC-VSe" id="Me2-0t-JkC"/>
+                <outlet property="likesLabelBtn" destination="U4G-t6-Csm" id="1Mj-n6-4KR"/>
+                <outlet property="replyCommentLAbel" destination="mbt-gX-tht" id="W7P-Eh-B6U"/>
+                <outlet property="replyUserNameLabel" destination="Lgt-Nh-can" id="1zG-0z-YGv"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="122.87946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
